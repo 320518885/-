@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"beziercurvepathplanning\startup_stm32f407xx.o"
+"beziercurvepathplanning\main.o"
+"beziercurvepathplanning\gpio.o"
+"beziercurvepathplanning\stm32f4xx_it.o"
+"beziercurvepathplanning\stm32f4xx_hal_msp.o"
+"beziercurvepathplanning\stm32f4xx_hal_tim.o"
+"beziercurvepathplanning\stm32f4xx_hal_tim_ex.o"
+"beziercurvepathplanning\stm32f4xx_hal_rcc.o"
+"beziercurvepathplanning\stm32f4xx_hal_rcc_ex.o"
+"beziercurvepathplanning\stm32f4xx_hal_flash.o"
+"beziercurvepathplanning\stm32f4xx_hal_flash_ex.o"
+"beziercurvepathplanning\stm32f4xx_hal_flash_ramfunc.o"
+"beziercurvepathplanning\stm32f4xx_hal_gpio.o"
+"beziercurvepathplanning\stm32f4xx_hal_dma_ex.o"
+"beziercurvepathplanning\stm32f4xx_hal_dma.o"
+"beziercurvepathplanning\stm32f4xx_hal_pwr.o"
+"beziercurvepathplanning\stm32f4xx_hal_pwr_ex.o"
+"beziercurvepathplanning\stm32f4xx_hal_cortex.o"
+"beziercurvepathplanning\stm32f4xx_hal.o"
+"beziercurvepathplanning\stm32f4xx_hal_exti.o"
+"beziercurvepathplanning\system_stm32f4xx.o"
+"beziercurvepathplanning\beziercurve.o"
+--strict --scatter "BezierCurvePathPlanning\BezierCurvePathPlanning.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BezierCurvePathPlanning.map" -o BezierCurvePathPlanning\BezierCurvePathPlanning.axf
